@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Machine</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <div id="game-container">
+        <h1>Money Machine</h1>
+        <p id="ppcDisplay">Penger per klikk: <span id="ppc">1</span></p>
+        <div id="moneyBox">
+          <span id="money">0</span>
+        </div>
+        <button id="clickButton">Klikk for penger</button>
+        <div id="upgrades">
+          <button id="arrowButton">Kjøp pil (50 kr)</button>
+          <button id="arrowSpeedButton">Oppgrader pilhastighet (75 kr)</button>
+          <button id="doubleMoneyButton">2x penger (1100 kr)</button>
+          <button id="moneyBoostButton">1+ kr per sekund (600 kr)</button>
+        </div>
+      </div>
+      <div id="upgradeStatus">
+        <ul>
+          <li id="autoStatus">Pil = ikke kjøpt</li>
+          <li id="speedStatus">
+            Oppgradering til pilhastighet = 1 klikk per 3 sekunder
+          </li>
+          <li id="doubleStatus">`2x penger = 1x</li>
+          <li id="boostStatus">1+ kr per sekund = 0+</li>
+        </ul>
+      </div>
+      <button id="toggleArrowMenu">Vis piloppgraderinger</button>
+      <div id="arrowUpgradeMenu" style="display: none">
+        <ul>
+          <li>
+            <button id="silverArrowButton" class="silver-arrow">
+              Kjøp Sølvpil (1000 kr)
+            </button>
+          </li>
+          <li>
+            <button id="goldArrowButton" class="gold-arrow" disabled>
+              Kjøp Gullpil (2000 kr)
+            </button>
+          </li>
+          <li>
+            <button id="diamondArrowButton" class="diamond-arrow" disabled>
+              Kjøp Diamantpil (3000 kr)
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

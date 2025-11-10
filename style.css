@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+#ppcDisplay {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+#moneyBox {
+  font-size: 42px;
+  color: black;
+  padding: 20px 40px;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  min-width: 220px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clickButton {
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #00ea06;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-bottom: 30px;
+}
+
+#clickButton:active {
+  background-color: #27ae60;
+  transform: scale(0.95);
+}
+
+#upgrades {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  max-width: 700px;
+}
+
+#upgrades button {
+  width: 160px;
+  height: 70px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-wrap: balance;
+}
+
+#upgrades button:active {
+  background-color: #2c80b4;
+  transform: scale(0.95);
+}
+
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#upgradeStatus {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 700px;
+  width: 100%;
+  text-align: left;
+}
+
+#upgradeStatus ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#upgradeStatus li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+#upgradeStatus li:last-child {
+  border-bottom: none;
+}
+
+#toggleArrowMenu {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #34495e;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#arrowUpgradeMenu {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 700px;
+  width: 100%;
+}
+
+#arrowUpgradeMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#arrowUpgradeMenu li {
+  margin-bottom: 10px;
+}
+
+#arrowUpgradeMenu button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#arrowUpgradeMenu button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.silver-arrow {
+  background-color: #c0c0c0;
+  color: black;
+}
+
+.gold-arrow {
+  background-color: #ffd700;
+  color: black;
+}
+
+.diamond-arrow {
+  background-color: #b9f2ff;
+  color: black;
+}
